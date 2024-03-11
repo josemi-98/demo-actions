@@ -1,7 +1,7 @@
 import unittest
-from suma import sumar, restar, multiplicar, dividir
+from src.operaciones import sumar, restar, multiplicar, dividir
 
-class TestSumar(unittest.TestCase):
+class TestOperaciones(unittest.TestCase):
 
     def test_sumar(self):
         self.assertEqual(sumar(3, 2), 5)
@@ -9,9 +9,9 @@ class TestSumar(unittest.TestCase):
         self.assertEqual(sumar(-1, -1), -2)
     
     def test_restar(self):
-        self.assertEqual((5, 3), 2)
+        self.assertEqual(restar(5, 3), 2) 
         self.assertEqual(restar(-5, -3), -2)
-        self.assertEqual(restar(5, 0), 5)
+        self.assertEqual(restar(5, 0), 5)  
 
     def test_multiplicar(self):
         self.assertEqual(multiplicar(5, 3), 15)
