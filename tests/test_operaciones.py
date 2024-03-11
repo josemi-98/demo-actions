@@ -4,7 +4,9 @@ from src.operaciones import sumar, restar, multiplicar, dividir
 class TestOperaciones(unittest.TestCase):
 
     def test_sumar(self):
-        self.assertEqual(sumar(3, 2), 5)
+        resultado = sumar(3, 2)
+        print("Resultado de sumar(3, 2):", resultado)
+        self.assertEqual(resultado, 5)
         self.assertEqual(sumar(-1, 1), 0)
         self.assertEqual(sumar(-1, -1), -2)
     
